@@ -313,7 +313,7 @@ describe('gen-skill-docs', () => {
     ];
 
     // Plan skills carry the same preamble surface as other tier-≥2 skills
-    // (Artifacts Sync, Context Recovery, Routing Injection are load-bearing
+    // (Artifacts Sync, Context Recovery, Routing Injection are decision-critical
     // functionality, not optional). Budget is set to current size + small
     // headroom; ratchet down if a future slim trims real bytes.
     // Ratcheted from 33000 → 35000 when the gbrain context-load block was
@@ -3037,7 +3037,7 @@ describe('plan-mode-info resolver (handshake-replacement)', () => {
 });
 
 // GSTACK REVIEW REPORT report-at-bottom contract — verifies the prompt-text
-// fix in scripts/resolvers/review.ts (the load-bearing change for the
+// fix in scripts/resolvers/review.ts (the decision-critical change for the
 // "report not at bottom of plan in plan mode" bug). The bug is in the
 // prompt's contradictory write-flow instructions, not in observable
 // runtime behavior we can cheaply gate in CI. Verifying the prompt text

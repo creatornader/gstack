@@ -15,7 +15,7 @@
  * size discipline only. This module supports content invariants per skill
  * family (e.g., cso must preserve OWASP/STRIDE; plan-ceo must preserve
  * mode-selection phrasing) so future compression can't silently strip
- * load-bearing prose even when size stays within ratio.
+ * decision-critical prose even when size stays within ratio.
  */
 
 import * as fs from 'fs';
